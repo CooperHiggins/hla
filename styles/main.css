@@ -1,0 +1,270 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+/*background-image: url(../images/harborBackground.jpg);
+*/}
+
+footer {
+  padding: 30px;
+  /*background-color: #3140C2;*/
+  background-color: #202A7F;
+  border-bottom: 25px solid #FFCC00;
+  height: 200px;
+  color: white; 
+  margin-top: 50px;
+}
+.glyphicon-upload:before {
+    content: "\e027";
+    font-size: 2em;
+}
+a {
+  color: #FFCC00;
+  text-decoration: none;
+}
+p.black {
+    color: black;
+}
+p.white {
+  color: white;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+tr{
+  border: solid black 2px;
+  color: white;
+}
+
+td {
+  border: solid black 2px;
+  color: white;
+}
+
+ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+ol {
+  color: white;
+}
+.background-image {
+  url:();
+}
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+.row {
+  padding: 20px; 
+  
+}
+.row.grey {
+    background-color: #F7F7F7;
+    color: black;
+}
+
+.container {
+  background-color: #202A7F;
+  border-radius: 20px;
+}
+.container-fluid {
+  background-color: #202A7F;
+}
+p {
+  font-size: 1.2em;
+}
+.row-grey {
+  background-color: #F2F5F6;
+}
+.col-md-6.home-images {
+    padding: 50px;
+}
+
+/*.container-fluid p {
+  color: white;
+}*/
+.container p {
+  color: white;
+}
+.container h1  {
+  color: #FFCC00;
+  font-size: 5em;
+}
+.container h2  {
+  color: #FFCC00;
+}
+.container h3  {
+  color: #FFCC00;
+}
+.container h4  {
+  color: #FFCC00;
+}
+.container h5  {
+  color: #FFCC00;
+}
+.container h6  {
+  color: #FFCC00;
+}
+.container-fluid h1 {
+  color: #FFCC00;
+}
+/*
+CUSTOM SLIDES
+*/
+.slidesjs-container {
+    height: 500px;
+}
+.slidesjs-pagination {
+  display: none;
+}
+.slidesjs-navigation {
+  display: none;
+}
+.slidesjs-pagination li a {
+    display: block;
+    width: 13px;
+    height: 0;
+    padding-top: 13px;
+    background-image: url(/img/pagination.png);
+    background-position: 0 0;
+    float: left;
+    overflow: hidden;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar {
+  position: relative; 
+  min-height: 50px; 
+  margin-bottom: 0px; 
+  border: 1px solid transparent;
+}
+.navbar-default {
+  font-family: 'italinao', cursive;
+  background-color: #202A7F;
+}
+.navbar-default .navbar-brand {
+    color: white;
+    font-size: 1.6em;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFCC00;
+}
+.navbar-default .navbar-nav > li > a:active {
+    color: #FFCC00;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: whitesmoke;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a {
+  color: yellow;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent;
+}
+.navbar-default .navbar-brand:hover {
+  color: #FFCC00;
+  background-color: transparent;
+}
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #FFCC00;
+    white-space: nowrap;
+} 
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #21297C;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.dropdown-menu > li > a:hover {
+    background-color: navy;
+    color: white;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover {
+  color: white;
+  background-color: navy;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: white;
+  background-color: navy;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 350px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+  .container h1 {
+    color: #FFCC00;
+    font-size: 3.8em;
+}
+}
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: lightblue;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
