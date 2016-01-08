@@ -21,6 +21,7 @@ $(function(){
     }
   });
 });
+
 function initialize() {
   var mapProp = {
     center:new google.maps.LatLng(30.5151747,-97.8882121),

@@ -2,25 +2,22 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 body {
-background-color: #F2F5F6;
+  background-color: #F2F5F6;
 }
-
 footer {
   padding: 30px;
-  /*background-color: #3140C2;*/
   background-color: #202A7F;
   border-bottom: 25px solid #FFCC00;
   height: 200px;
   color: white; 
   margin-top: 50px;
 }
-.glyphicon-upload:before {
-    content: "\e027";
-    font-size: 2em;
-}
 a {
   color: #FFCC00;
   text-decoration: none;
+}
+p {
+  font-size: 1.2em;
 }
 p.black {
     color: black;
@@ -55,14 +52,15 @@ hr {
     border: 0;
     border-top: 1px solid;
 }
-.background-image {
-  url:();
-}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
+}
+.glyphicon-upload:before {
+    content: "\e027";
+    font-size: 2em;
 }
 .row {
   padding: 20px; 
@@ -72,30 +70,24 @@ hr {
     background-color: #F7F7F7;
     color: black;
 }
-
-.container {
-  /*background-color: #202A7F;*/
-  border-radius: 20px;
-}
-.container-fluid {
-  background-color: #202A7F;
-}
-p {
-  font-size: 1.2em;
-}
 .row-grey {
   background-color: #F2F5F6;
 }
-.col-md-6.home-images {
-    padding: 50px;
+.row.white {
+    background-color: white;
+    /* padding: 30px; */
 }
 
-/*.container-fluid p {
-  color: white;
-}*/
+.container-fluid {
+  background-color: #202A7F;
+}
 .image-container {
-    padding: 100px 60px 30px 100px;
+    padding: 30px;
     /* border: solid 1px blue; */
+}
+.container {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .container p {
   color: black;
@@ -106,6 +98,11 @@ p {
 }
 h1.blue {
     color: blue;
+}
+h1.new-header {
+    padding: 20px;
+    font-size: 4.6em;
+    color: #202A7F;
 }
 .container-fluid h1.blue {
     color: #202A7F;
@@ -131,24 +128,14 @@ h1.blue {
 /*
 CUSTOM SLIDES
 */
-.slidesjs-container {
-    height: 500px;
-}
 .slidesjs-pagination {
   display: none;
 }
 .slidesjs-navigation {
   display: none;
 }
-.slidesjs-pagination li a {
-    display: block;
-    width: 13px;
-    height: 0;
-    padding-top: 13px;
-    background-image: url(/img/pagination.png);
-    background-position: 0 0;
-    float: left;
-    overflow: hidden;
+div#slides {
+    height: 500px;
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -239,15 +226,10 @@ CUSTOM SLIDES
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (max-width: 350px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
-
   .container {
     max-width: 90%;
   }
   .container h1 {
-    /*color: #FFCC00;*/
     color: #202A7F;
     font-size: 3.8em;
 }
@@ -255,6 +237,10 @@ CUSTOM SLIDES
     padding-top: 0px;
     /* border: solid 1px blue; */
 }
+div#slides {
+    height: 100%;
+}
+
 }
 @media (min-width: 768px) {
   /* Navbar positioning foo */
