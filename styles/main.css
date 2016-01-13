@@ -5,12 +5,12 @@ body {
   background-color: #F2F5F6;
 }
 footer {
-  padding: 30px;
-  background-color: #202A7F;
-  border-bottom: 25px solid #FFCC00;
-  height: 200px;
-  color: white; 
-  margin-top: 50px;
+    padding: 30px;
+    background-color: #202A7F;
+    border-top: 25px solid #FFCC00;
+    height: 200px;
+    color: white;
+    /* margin-top: 50px; */
 }
 a {
   color: #FFCC00;
@@ -59,16 +59,17 @@ hr {
   padding: 0.2em 0;
 }
 .glyphicon-upload:before {
-    content: "\e027";
-    font-size: 2em;
+  content: "\e027";
+  font-size: 2em;
 }
-.row {
-  padding: 20px; 
-  
+div.row.home {
+  height: 750px;
+  padding: 15em;
+  text-align: center;
 }
 .row.grey {
-    background-color: #F7F7F7;
-    color: black;
+  background-color: #F7F7F7;
+  color: black;
 }
 .row-grey {
   background-color: #F2F5F6;
@@ -80,6 +81,9 @@ hr {
 
 .container-fluid {
   background-color: #202A7F;
+}
+.container-fluid.white {
+    background-color: white;
 }
 .image-container {
     padding: 30px;
@@ -100,6 +104,7 @@ h1.blue {
     color: blue;
 }
 h1.new-header {
+    padding: 20px;
     font-size: 4.6em;
     color: #202A7F;
 }
@@ -239,6 +244,11 @@ div#slides {
 div#slides {
     height: 100%;
 }
+div.row.home {
+    height: 750px;
+    text-align: center;
+}
+
 
 }
 @media (min-width: 768px) {
@@ -270,4 +280,8 @@ div#slides {
   .featurette-heading {
     margin-top: 120px;
   }
+  .col-md-6 {
+    width: 100%;
+  }
+
 }
