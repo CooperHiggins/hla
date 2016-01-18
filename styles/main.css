@@ -67,7 +67,7 @@ hr {
 div.row.home {
   height: 750px;
   text-align: center;
-  padding: 10%;
+  padding: 15%;
 }
 .row.grey {
   background-color: #F7F7F7;
@@ -293,33 +293,28 @@ img.slider-image {
 }
 
 .slides ul li div {
-    background-color: #17176E;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 0 0 5px #FFFFFF inset;
-    color: #FFCC00;
-    font-size: 26px;
-    left: 21%;
-    margin: 0px;
-    padding: 5px;
-    position: absolute;
-    top: 15%;
-    width: 300px;
-    -webkit-animation-name: anim_titles;
-    -webkit-animation-duration: 24.0s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: normal;
-    -webkit-animation-delay: 0;
-    -webkit-animation-play-state: running;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-name: anim_titles;
-    -moz-animation-duration: 24.0s;
-    -moz-animation-timing-function: linear;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-direction: normal;
-    -moz-animation-delay: 0;
-    -moz-animation-play-state: running;
-    -moz-animation-fill-mode: forwards;
+  color: white;
+  font-size: 26px;    left: 21%;
+  padding: 5px;
+  position: absolute;
+  top: 15%;
+  width: 60%
+  -webkit-animation-name: anim_titles;
+  -webkit-animation-duration: 20.0s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -webkit-animation-delay: 0;
+  -webkit-animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: anim_titles;
+  -moz-animation-duration: 24.0s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: normal;
+  -moz-animation-delay: 0;
+  -moz-animation-play-state: running;
+  -moz-animation-fill-mode: forwards;
 }
 
 /* CUSTOMIZE THE NAVBAR
