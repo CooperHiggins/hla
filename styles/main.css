@@ -3,6 +3,7 @@
 /* Padding below the footer and lighter body text */
 body {
   background-color: #F2F5F6;
+  font-family: 'Lato', sans-serif;
 }
 footer {
     padding: 30px;
@@ -64,8 +65,8 @@ hr {
 }
 div.row.home {
   height: 750px;
-  padding: 15em;
   text-align: center;
+  padding: 10%;
 }
 .row.grey {
   background-color: #F7F7F7;
@@ -78,13 +79,16 @@ div.row.home {
     background-color: white;
     /* padding: 30px; */
 }
+.row.image-banner {
+    padding: 30px;
+}
 
 .container-fluid {
   background-color: #202A7F;
 }
 .container-fluid.white {
     background-color: white;
-}
+}f
 .image-container {
     padding: 30px;
     /* border: solid 1px blue; */
@@ -108,27 +112,27 @@ h1.new-header {
     font-size: 4.6em;
     color: #202A7F;
 }
-.container-fluid h1.blue {
-    color: #202A7F;
-}
+
 .container h2  {
-  color: #FFCC00;
+  color: #202A7F;
 }
 .container h3  {
-  color: #FFCC00;
+  color: #202A7F;
 }
 .container h4  {
-  color: #FFCC00;
+  color: #202A7F;
 }
 .container h5  {
-  color: #FFCC00;
+  color: #202A7F;
 }
 .container h6  {
-  color: #FFCC00;
+  color: #202A7F;
 }
 .container-fluid h1 {
   color: #FFCC00;
 }
+
+
 /*
 CUSTOM SLIDES
 */
@@ -140,6 +144,181 @@ CUSTOM SLIDES
 }
 div#slides {
     height: 500px;
+}
+img.home-image {
+    height: 500px;
+    width: 100%;
+}
+
+/* fade slider */
+.slides {
+    height:500px;
+    overflow:hidden;
+    position:relative;
+    width:100%;
+}
+.slides ul {
+    list-style:none;
+    position:relative;
+}
+img.slider-image {
+    height: 500px;
+    width: 100%;
+}
+
+/* keyframes #anim_slides */
+@-webkit-keyframes anim_slides {
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+@-moz-keyframes anim_slides {
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+.slides ul li {
+    opacity:0;
+    position:absolute;
+    top:0;
+
+    /* css3 animation */
+    -webkit-animation-name: anim_slides;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: anim_slides;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+
+
+/* css3 delays */
+.slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
+    -webkit-animation-delay: 6.0s;
+    -moz-animation-delay: 6.0s;
+}
+.slides ul  li:nth-child(3), .slides ul  li:nth-child(3) div {
+    -webkit-animation-delay: 12.0s;
+    -moz-animation-delay: 12.0s;
+}
+.slides ul  li:nth-child(4), .slides ul  li:nth-child(4) div {
+    -webkit-animation-delay: 18.0s;
+    -moz-animation-delay: 18.0s;
+}
+.slides ul li img {
+    display:block;
+}
+
+/* keyframes #anim_titles */
+@-webkit-keyframes anim_titles {
+    0% {
+        left:100%;
+        opacity:0;
+    }
+    5% {
+        left:10%;
+        opacity:1;
+    }
+    20% {
+        left:10%;
+        opacity:1;
+    }
+    25% {
+        left:100%;
+        opacity:0;
+    }
+    100% {
+        left:100%;
+        opacity:0;
+    }
+}
+@-moz-keyframes anim_titles {
+    0% {
+        left:100%;
+        opacity:0;
+    }
+    5% {
+        left:10%;
+        opacity:1;
+    }
+    20% {
+        left:10%;
+        opacity:1;
+    }
+    25% {
+        left:100%;
+        opacity:0;
+    }
+    100% {
+        left:100%;
+        opacity:0;
+    }
+}
+
+.slides ul li div {
+    background-color: #17176E;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 5px #FFFFFF inset;
+    color: #FFCC00;
+    font-size: 26px;
+    left: 21%;
+    margin: 0px;
+    padding: 5px;
+    position: absolute;
+    top: 15%;
+    width: 500px;
+    -webkit-animation-name: anim_titles;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: anim_titles;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -153,16 +332,18 @@ div#slides {
   border: 1px solid transparent;
 }
 .navbar-default {
-  font-family: 'italinao', cursive;
+  font-family: 'Bevan', cursive;
+  font-size: 15px;
   background-color: #202A7F;
 }
 .navbar-default .navbar-brand {
     color: white;
-    font-size: 1.6em;
+    
 }
 
 .navbar-default .navbar-nav > li > a {
     color: #FFCC00;
+    
 }
 .navbar-default .navbar-nav > li > a:active {
     color: #FFCC00;
@@ -185,13 +366,14 @@ div#slides {
 }
 .dropdown-menu > li > a {
     display: block;
-    padding: 3px 20px;
+    padding: 2px 14px;
     clear: both;
     font-weight: normal;
     line-height: 1.42857143;
     color: #FFCC00;
     white-space: nowrap;
-} 
+    font-size: 20px;
+}
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -202,7 +384,7 @@ div#slides {
     min-width: 160px;
     padding: 5px 0;
     margin: 2px 0 0;
-    font-size: 14px;
+    
     text-align: left;
     list-style: none;
     background-color: #21297C;
@@ -248,7 +430,11 @@ div.row.home {
     height: 750px;
     text-align: center;
 }
-
+div.row.home {
+    height: 750px;
+    padding: 3em;
+    text-align: center;
+}
 
 }
 @media (min-width: 768px) {
@@ -280,8 +466,8 @@ div.row.home {
   .featurette-heading {
     margin-top: 120px;
   }
-  .col-md-6 {
-    width: 100%;
-  }
+  .col-md-12.main-image {
+    margin-bottom: 50px;
+}
 
 }
