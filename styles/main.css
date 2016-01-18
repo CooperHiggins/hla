@@ -19,6 +19,7 @@ a {
 }
 p {
   font-size: 1.2em;
+  margin: 0px;
 }
 p.black {
     color: black;
@@ -302,7 +303,7 @@ img.slider-image {
     padding: 5px;
     position: absolute;
     top: 15%;
-    width: 500px;
+    width: 300px;
     -webkit-animation-name: anim_titles;
     -webkit-animation-duration: 24.0s;
     -webkit-animation-timing-function: linear;
@@ -434,6 +435,9 @@ div.row.home {
     height: 750px;
     padding: 3em;
     text-align: center;
+}
+span.glyphicon.glyphicon-upload {
+    display: none;
 }
 
 }
