@@ -9,9 +9,23 @@ footer {
     padding: 30px;
     background-color: #202A7F;
     border-top: 25px solid #FFCC00;
-    height: 200px;
     color: white;
     /* margin-top: 50px; */
+}
+ul.social-nav {
+    font-size: 19px;
+    padding: 0px 30px 30px 0px;
+    display: block;
+    text-align: right; 
+    font-size: 50px;
+}
+ul.footer-nav {
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.col-md-4.footer-box.center {
+    text-align: center;
 }
 a {
   color: #FFCC00;
@@ -65,7 +79,7 @@ hr {
   font-size: 2em;
 }
 div.row.home {
-  height: 750px;
+  height: 850px;
   text-align: center;
   padding: 15%;
 }
@@ -400,9 +414,25 @@ img.slider-image {
   color: white;
   background-color: navy;
 }
+.navbar-default .navbar-toggle {
+    border-color: black;
+}
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   color: white;
   background-color: navy;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: yellow;
+}
+ul.nav.navbar-nav a:hover {
+    margin: 1px;
+    background-color: #FFCC00;
+    color: #202A7F;
+}
+
+ .navbar-default .navbar-nav > li > a:focus {
+    color: white;
+   
 }
 
 /* RESPONSIVE CSS
@@ -436,7 +466,7 @@ span.glyphicon.glyphicon-upload {
 }
 
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 20px;
@@ -450,7 +480,9 @@ span.glyphicon.glyphicon-upload {
     padding-right: 0;
     padding-left: 0;
   }
-
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: yellow;
+}
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px;
