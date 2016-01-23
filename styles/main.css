@@ -5,30 +5,12 @@ body {
   background-color: #F2F5F6;
   font-family: 'Lato', sans-serif;
 }
-footer {
-    padding: 30px;
-    background-color: #202A7F;
-    border-top: 25px solid #FFCC00;
-    color: white;
-    /* margin-top: 50px; */
-}
-ul.social-nav {
-    font-size: 19px;
-    padding: 0px 30px 30px 0px;
-    display: block;
-    text-align: right; 
-    font-size: 50px;
-}
-ul.footer-nav {
-    padding-bottom: 30px;
-    font-size: 20px;
-}
-
-.col-md-4.footer-box.center {
-    text-align: center;
-}
 a {
   color: #FFCC00;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
   text-decoration: none;
 }
 p {
@@ -41,27 +23,22 @@ p.black {
 p.white {
   color: white;
 }
-a:hover {
-  color: white;
-  text-decoration: none;
+p.align-right {
+    text-align: right;
 }
-
-tr{
+tr {
   border: solid black 2px;
   color: white;
 }
-
 td {
   border: solid black 2px;
   color: #202A7F;
 }
-
 ul {
     list-style: none; /* Remove list bullets */
     padding: 0;
     margin: 0;
 }
-
 hr {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -74,10 +51,36 @@ hr {
   color: #000;
   padding: 0.2em 0;
 }
+
+footer {
+    padding: 30px;
+    background-color: #202A7F;
+    border-top: 25px solid #FFCC00;
+    color: white;
+    /* margin-top: 50px; */
+}
+ul.footer-nav {
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+ul.social-nav {
+    font-size: 19px;
+    padding: 0px 30px 30px 0px;
+    display: block;
+    text-align: right; 
+    font-size: 50px;
+}
+.col-md-4.footer-box.center {
+    text-align: center;
+}
 .glyphicon-upload:before {
   content: "\e027";
-  font-size: 2em;
+  font-size: 4em;
 }
+
+
+
+
 div.row.home {
   height: 850px;
   text-align: center;
@@ -97,16 +100,14 @@ div.row.home {
 .row.image-banner {
     padding: 30px;
 }
-
-.container-fluid {
-  background-color: #202A7F;
-}
-.container-fluid.white {
-    background-color: white;
-}f
 .image-container {
     padding: 30px;
     /* border: solid 1px blue; */
+}
+
+
+.container-fluid {
+  background-color: #202A7F;
 }
 .container {
   padding-top: 30px;
@@ -115,10 +116,10 @@ div.row.home {
 .container p {
   color: black;
 }
-.container h1  {
-  color: #202A7F;
-  font-size: 5em;
+.container-fluid.white {
+    background-color: white;
 }
+
 h1.blue {
     color: blue;
 }
@@ -127,7 +128,10 @@ h1.new-header {
     font-size: 4.6em;
     color: #202A7F;
 }
-
+.container h1  {
+  color: #202A7F;
+  font-size: 5em;
+}
 .container h2  {
   color: #202A7F;
 }
@@ -147,12 +151,113 @@ h1.new-header {
   color: #FFCC00;
 }
 
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar {
+  position: relative; 
+  min-height: 50px; 
+  margin-bottom: 0px; 
+  border: 1px solid transparent;
+}
+.navbar-default {
+  font-family: 'Bevan', cursive;
+  font-size: 15px;
+  background-color: #202A7F;
+}
+.navbar-default .navbar-brand {
+  color: white;    
+}
+.navbar-default .navbar-nav > li > a {
+  color: #FFCC00;   
+}
+.navbar-default .navbar-nav > li > a:active {
+  color: #FFCC00;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: whitesmoke;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a {
+  color: yellow;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent;
+}
+.navbar-default .navbar-brand:hover {
+  color: #FFCC00;
+  background-color: transparent;
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 2px 14px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #FFCC00;
+  white-space: nowrap;
+  font-size: 20px;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;  
+  text-align: left;
+  list-style: none;
+  background-color: #21297C;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.dropdown-menu > li > a:hover {
+  background-color: navy;
+  color: white;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover {
+  color: white;
+  background-color: navy;
+}
+.navbar-default .navbar-toggle {
+  border-color: black;
+  color: white;
+  background-color: #FFCC00;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #FFCC00;
+  border-color: black;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #202A7F;
+  background-color: white;
+}
+ul.nav.navbar-nav a:hover {
+  margin: 1px;
+  background-color: #FFCC00;
+  color: #202A7F;
+}
+ .navbar-default .navbar-nav > li > a:focus {
+    color: white;  
+}
 
 /*
 CUSTOM SLIDES
 */
-
-
 /* fade slider */
 .slides {
     height:500px;
@@ -320,115 +425,6 @@ img.slider-image {
   -moz-animation-fill-mode: forwards;
 }
 
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar {
-  position: relative; 
-  min-height: 50px; 
-  margin-bottom: 0px; 
-  border: 1px solid transparent;
-}
-.navbar-default {
-  font-family: 'Bevan', cursive;
-  font-size: 15px;
-  background-color: #202A7F;
-}
-.navbar-default .navbar-brand {
-    color: white;
-    
-}
-
-.navbar-default .navbar-nav > li > a {
-    color: #FFCC00;
-    
-}
-.navbar-default .navbar-nav > li > a:active {
-    color: #FFCC00;
-}
-.navbar-default .navbar-nav > li > a:hover {
-  color: whitesmoke;
-  background-color: transparent;
-}
-.navbar-default .navbar-nav > .active > a {
-  color: yellow;
-  background-color: transparent;
-}
-
-.navbar-default .navbar-nav > .active > a:hover {
-  background-color: transparent;
-}
-.navbar-default .navbar-brand:hover {
-  color: #FFCC00;
-  background-color: transparent;
-}
-.dropdown-menu > li > a {
-    display: block;
-    padding: 2px 14px;
-    clear: both;
-    font-weight: normal;
-    line-height: 1.42857143;
-    color: #FFCC00;
-    white-space: nowrap;
-    font-size: 20px;
-}
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 160px;
-    padding: 5px 0;
-    margin: 2px 0 0;
-    
-    text-align: left;
-    list-style: none;
-    background-color: #21297C;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #ccc;
-    border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-}
-.dropdown-menu > li > a:hover {
-    background-color: navy;
-    color: white;
-}
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover {
-  color: white;
-  background-color: navy;
-}
-.navbar-default .navbar-toggle {
-    border-color: black;
-    color: white;
-    background-color: #FFCC00;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #FFCC00;
-    border-color: black;
-}
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: #202A7F;
-  background-color: white;
-}
-ul.nav.navbar-nav a:hover {
-    margin: 1px;
-    background-color: #FFCC00;
-    color: #202A7F;
-}
-
- .navbar-default .navbar-nav > li > a:focus {
-    color: white;
-   
-}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
