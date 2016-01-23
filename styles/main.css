@@ -151,19 +151,7 @@ h1.new-header {
 /*
 CUSTOM SLIDES
 */
-.slidesjs-pagination {
-  display: none;
-}
-.slidesjs-navigation {
-  display: none;
-}
-div#slides {
-    height: 500px;
-}
-img.home-image {
-    height: 500px;
-    width: 100%;
-}
+
 
 /* fade slider */
 .slides {
@@ -171,6 +159,7 @@ img.home-image {
     overflow:hidden;
     position:relative;
     width:100%;
+    text-align: center;
 }
 .slides ul {
     list-style:none;
@@ -290,11 +279,11 @@ img.slider-image {
     }
     5% {
         left:10%;
-        opacity:1;
+        opacity:0;
     }
     20% {
         left:10%;
-        opacity:1;
+        opacity:0;
     }
     25% {
         left:100%;
