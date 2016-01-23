@@ -416,13 +416,19 @@ img.slider-image {
 }
 .navbar-default .navbar-toggle {
     border-color: black;
+    color: white;
+    background-color: #FFCC00;
 }
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: white;
-  background-color: navy;
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: yellow;
+    background-color: #FFCC00;
+    border-color: black;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #202A7F;
+  background-color: white;
 }
 ul.nav.navbar-nav a:hover {
     margin: 1px;
@@ -481,7 +487,7 @@ span.glyphicon.glyphicon-upload {
     padding-left: 0;
   }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: yellow;
+    color: #FFCC00;
 }
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
