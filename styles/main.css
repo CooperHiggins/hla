@@ -72,6 +72,9 @@ ul.social-nav {
 }
 .col-md-4.footer-box.center {
     text-align: center;
+  }
+  .col-xs-4.center {
+    text-align: center;
 }
 .glyphicon-upload:before {
   content: "\e027";
