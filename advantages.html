@@ -13,6 +13,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="scripts/bower_components/bootstrap/dist/css/bootstrap.css" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -21,7 +22,11 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="scripts/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-    
+    <!-- GOOGLE FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="styles/font-awesome.min.css">
+
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -61,11 +66,17 @@
             </div>
           </div>
         </nav>
-<div class="background-image">
-  <img src="images/hlaLogo.jpg">
-    <div class="container">
-      <h1>Advantages</h1>
-      <hr>
+<div class="row white">
+<img src="images/hlaLogo.jpg" style="float: left;">
+    <h1 class="new-header">Advantages</h1>
+    <hr>
+</div>
+<div class="container">
+    <div class="col-md-12 main-image">
+      <div class="image-container">
+        <img src="images/example1.jpg" class="img-responsive">
+      </div>
+    </div>
       <h3>Language Arts / English Program</h3>
       <p>Harbor AcademyLanguage Arts / English Program encompasses reading and written language instruction. After thourough evaluations, all students' studies begin at their current instructional reading level.</p>
 
@@ -126,16 +137,51 @@
       <h3>Technology</h3>
       <p>Our yound students quickly are introduced to touch-typing and word processing applications, as computers are utilized within the classrooms as a part of their daily curriculum. At the higher-grade levels. our students also learn to create spreadsheets, graphs, and organizational charts with computers. In addition, students may incorporate digital photography involving the use of digital cameras, scanners, and editing software; and are encouraged to integrate these skills into the core curriculum.</p>
       <p>Our computer lab features the latest technology where every student has an opportunity to use a computer, and our lab is equipped with high-speed cable internet connections.</p>
-    </div>
 </div>
-    <!-- FOOTER -->
-      <footer>
-       <p class="pull-right">Phone:<a href="tel:512-219-5653"> 512-219-5653 </a>7317 RM 1431, LEANDER, TEXAS, 78641 </p>
-        <p>&copy; 2015 Harbor Leadership Academy, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        <p class="pull-right"><a href="#"><span class="glyphicon glyphicon-upload" aria-hidden="true"></a></p> 
-      </footer>
+
+<!-- FOOTER -->
+<footer>
+  <div class="row">
+      <div class="col-md-4  col-xs-4 footer-box">
+        <ul class="footer-nav">
+          <li class="footer-links"><a href="index.html">Home</a></li>
+          <li class="footer-links"><a href="about.html">About Us</a></li>
+          <li class="footer-links"><a href="advantages.html">Advantages</a></li>
+          <li class="footer-links"><a href="academics.html">Academics</a></li>
+          <li class="footer-links"><a href="admissions.html">Admissions</a></li>
+          <li><a href="Resume.pdf">Coopers Resume</a></li>
+
+        </ul>
     </div>
-    </div><!-- /.container -->
+
+      <div class="col-md-4 col-xs-4 footer-box">
+        
+      </div>
+
+  <div class="col-md-4 col-xs-4 footer-box ">
+        <ul class="list-inline social-nav">
+        <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
+        <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+        <li><a href=""><i class="fa fa-instagram"></i></a></li> 
+        <li><a href=""><i class="fa fa-google-plus-square"></i></a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4 col-xs-4 footer-box">
+      <p class="pull-right">Phone: <a href="tel:512-219-5653">512-219-5653</a> Address: 7317 RM 1431, LEANDER, TEXAS, 78641 </p>
+      </div>
+
+      <div class="col-md-4 col-xs-4 footer-box center">
+      <p><a href="#"><span class="glyphicon glyphicon-upload" aria-hidden="true"></a></p> 
+      </div>
+
+      <div class="col-md-4  col-xs-4 footer-box">
+      <p class="align-right">&copy; 2015 Harbor Leadership Academy, Inc. </br> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; </p>   
+      </div>
+</div>
+</footer>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->

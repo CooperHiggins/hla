@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="ng-app" lang="">
   <head>
     <meta charset="utf-8">
     <title>Cooper</title>
@@ -13,6 +13,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="scripts/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -21,6 +22,10 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="scripts/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <!-- GOOGLE FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
     
   </head>
   <body>
@@ -62,40 +67,48 @@
           </div>
         </nav>
 
-<div id="slides">
-    <img src="images/lighthouse1.jpg">
-    <img src="images/lighthouse2.jpg">
-    <img src="images/lighthouse3.jpg">
+<div class="slides">
 
+    <ul> <!-- slides -->
+        <li><img src="images/lighthouse3.jpg" alt="image01" class="slider-image" />
+            <div>Aliquam lectus orci, adipiscing et, sodales ac, feugiat non, lacus. Ut dictum velit nec est. Quisque posuere, purus sit amet malesuada blandit, sapien sapien auctor arcu, sed pulvinar felis mi sollicitudin tortor.</div>
+        </li>
+        <li><img src="images/lighthouse3.jpg" alt="image01" class="slider-image" />
+            <div>Aliquam lectus orci, adipiscing et, sodales ac, feugiat non, lacus. Ut dictum velit nec est. Quisque posuere, purus sit amet malesuada blandit, sapien sapien auctor arcu, sed pulvinar felis mi sollicitudin tortor. .</div>
+        </li>
+        <li><img src="images/lighthouse3.jpg" alt="image01" class="slider-image" />
+            <div>Aliquam lectus orci, adipiscing et, sodales ac, feugiat non, lacus. Ut dictum velit nec est. Quisque posuere, purus sit amet malesuada blandit, sapien sapien auctor arcu, sed pulvinar felis mi sollicitudin tortor. Maecenas volutpat, nisl et dignissim pharetra, urna lectus ultrices est, vel pretium pede turpis id velit. </div>
+        </li>
+        
+    </ul>
 </div>
 
-<img src="images/hlaLogo.jpg">
 
 <div class="container-fluid">
 
-    <div class="row">
-        <div class="col-md-6">
+    <div class="row home">
+        <div class="col-xs-12">
         <h1>What we do</h1>
         <p class="white">Harbor Leadership Academy is an independent, specialized school located in the Northwest Suburbs of Austin Texas.  Our program is ideal for students with mild to moderate learning disabilities, dyslexia, and or attention deficit disorder, with or without hyperactivity (ADD or ADHD).  We design personalized education for every student for grades Pre-K through 12th grade.  We have a very low teacher-to-pupil ratio and direct and explicit instruction using multisensory learning techniques and a higher rate of individual attention that is typically found in more traditional settings.</p>
         <p class="white"><strong>This is NOT a slowed down version of traditional schooling.</strong>  There are no reduced expectations of student learning or performance.</p>
         </div>
 
         <div class="col-md-6 home-images">
-        <img src="images/img1.jpg" class="img-responsive" alt="Responsive image">
+        <!-- <img src="images/img5.jpg" class="img-responsive" alt="Responsive image"> -->
         </div>
 
       </div>
 
        
         
-      <div class="row grey">
+      <div class="row grey home">
 
-       <div class="col-md-6 home-images">
-          <img src="images/img2.jpg" class="img-responsive" alt="Responsive image">
+       <div class="col-xs-12 home-images">
+          <!-- <img src="images/img2.jpg" class="img-responsive" alt="Responsive image"> -->
         </div>
 
-        <div class="col-md-6">
-        <h1>Academics</h1>
+        <div class="col-xs-12">
+        <h1 class="blue">Academics</h1>
         <p class="black"><strong>Harbor Academy serves students who need a highly structured, individualized context in which to learn.</strong>Our strong academic curriculum includes multisensory teaching methods delivered in small class settings.  Students at HLA are able to develop learning styles consistent with the strengths of their own minds through consistent processes and careful observation.  We have achieved this goal since we focus on students' gifts and abilities.</p>
         <p class="black">Harbor Leadership Academy specializes in instruction for students with mild to moderate Learning Differences, Attention Deficit Disorders (ADD & ADHD), Processing Disorders, Short and Long Term Memory Challenges, Retrieval Issues and Dysgraphia.</p>
         <p class="black">Prior to each school year, each students' course schedule is individually prepared based on the students' current levels in each area and the students' goals.</p>
@@ -103,25 +116,71 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-6">
-        <h1>Work/Study Curriculum</h1>
+      <div class="row home">
+        <div class="col-xs-12">
+        <h1 class="yellow">Work/Study Curriculum</h1>
         <p class="white"><strong>Harbor Leadership Academy offers a comprehensive academic program, from developing essential fundamental and reasoning skills in our Preschool and Kindergarten students, to providing the highest levels of instruction to our high school students that gives them a competitive advantage in the college application process.</strong> Small classes and individualized instruction and curriculum provide a non-threatening learning environment that makes learning Harbor students. As a result, our students have an opportunity to attain greater levels of understanding, which generally enables them to achieve outstanding scores on standardized examinations relative to state and national averages</p>
         </div> 
         <div class="col-md-6">
-        <img src="images/img3.jpg" class="img-responsive" alt="Responsive image"></div> 
+        <!-- <img src="images/img6.jpg" class="img-responsive" alt="Responsive image"></div>  -->
       </div>
     </div>
+</div>
 
-    <!-- FOOTER -->
+<div class="container-fluid white">
+<div class="row image-banner">
+<div class="col-md-6 image-banner">
+<img src="images/hlaLogo.jpg" >
+</div>
+<div class="col-md-6 image-banner">
+<p > Harbor Leadership Academy admits qualified students and does not discriminate on the basis of race, color, religion, sex, or national origin, in the administration of its education program, admissions, financial aid, athletics or other school policies. All students are afforded the rights, privileges, programs and activities generally accorded or make available to Harbor Leadership Academy students.</p>
+</div>
+</div>
+</div>
+
 <!-- FOOTER -->
-      <footer>
-       <p class="pull-right">Phone:<a href="tel:512-219-5653"> 512-219-5653 </a>7317 RM 1431, LEANDER, TEXAS, 78641 </p>
-        <p>&copy; 2015 Harbor Leadership Academy, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        <p class="pull-right"><a href="#"><span class="glyphicon glyphicon-upload" aria-hidden="true"></a></p> 
-      </footer>
-    
+<footer>
+  <div class="row">
+      <div class="col-md-4  col-xs-4 footer-box">
+        <ul class="footer-nav">
+          <li class="footer-links"><a href="index.html">Home</a></li>
+          <li class="footer-links"><a href="about.html">About Us</a></li>
+          <li class="footer-links"><a href="advantages.html">Advantages</a></li>
+          <li class="footer-links"><a href="academics.html">Academics</a></li>
+          <li class="footer-links"><a href="admissions.html">Admissions</a></li>
+          <li><a href="Resume.pdf">Example PDF link</a></li>
 
+        </ul>
+    </div>
+
+      <div class="col-md-4 col-xs-4 footer-box">
+        
+      </div>
+
+  <div class="col-md-4 col-xs-4 footer-box ">
+        <ul class="list-inline social-nav">
+        <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
+        <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+        <li><a href=""><i class="fa fa-instagram"></i></a></li> 
+        <li><a href=""><i class="fa fa-google-plus-square"></i></a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4 col-xs-4 footer-box">
+      <p class="pull-right">Phone: <a href="tel:512-219-5653">512-219-5653</a> Address: 7317 RM 1431, LEANDER, TEXAS, 78641 </p>
+      </div>
+
+      <div class="col-md-4 col-xs-4 footer-box center">
+      <p><a href="#"><span class="glyphicon glyphicon-upload" aria-hidden="true"></a></p> 
+      </div>
+
+      <div class="col-md-4  col-xs-4 footer-box">
+      <p class="align-right">&copy; 2015 Harbor Leadership Academy, Inc. </br> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; </p>   
+      </div>
+</div>
+</footer>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="scripts/bower_components/jquery/dist/jquery.js"></script>
